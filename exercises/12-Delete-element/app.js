@@ -1,7 +1,11 @@
 let people = ['juan','ana','michelle','daniella','stefany','lucy','barak', 'emilio'];
 
 //your code below
-let newarr = people.filter((element) => element != filter);
+function deletePerson(name){
+    let newArr = people.filter((item) => !name.includes(item));
+    return newArr;
+}
+
 
 console.log(deletePerson('daniella'));
 console.log(deletePerson('juan'));
