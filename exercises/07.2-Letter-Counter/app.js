@@ -4,10 +4,10 @@ let counts = {};
 // your code here
 let newstr = par.replace(/\s/g,'');
 for (let i = 0; i < newstr.length; i++){
-    let letter = par[i].toLowerCase();
-    if (counts.hasOwnProperty(newstr[i]))
-        counts.letter += 1;
+    let letter = newstr[i].toLowerCase();
+    if (counts[letter] == undefined)
+        counts[letter] = 1;
     else
-        counts.letter = 1; 
+        counts[letter] += 1;
 }
 console.log(counts);
