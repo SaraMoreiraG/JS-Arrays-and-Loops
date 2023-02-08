@@ -2,12 +2,5 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
-let newstr = par.replace(/\s/g,'');
-for (let i = 0; i < newstr.length; i++){
-    let letter = par[i].toLowerCase();
-    if (counts.hasOwnProperty(newstr[i]))
-        counts.letter += 1;
-    else
-        counts.letter = 1; 
-}
+
 console.log(counts);
