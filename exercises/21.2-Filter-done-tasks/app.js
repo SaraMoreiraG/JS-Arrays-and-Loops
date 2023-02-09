@@ -11,6 +11,6 @@ let tasks = [
 
 //your code here
 var newArr = tasks.filter(function (value){
-	return (value.done == true)
+	return (value.done == true);
 });
 console.log (newArr);
